@@ -5,17 +5,34 @@
 
 int main(int argc, char *argv[]) 
 {
-	int x;
-	int i;
-	int sum=0;
+	int a,b;
+	char op;
+	int result;
 	
-	printf("Input a number :");
-	scanf("%d",&x);
+	printf("Enter the calculation :");
+	scanf("%i%c%i", &a,&op,&b);
 	
-	for(i=0;i<=x;i++)
-		sum = sum + i;
-		
-		printf("sum is %i\n", sum);
+	switch(op)
+	{
+		case '+' :
+			result = a + b;
+			break;
+			
+		case '-' :
+			result = a - b;
+			break;
+			
+		case '*' :
+			result = a * b;
+			break;
+			
+		default :
+			result = a / b;
+			break;
+			
+	}
+	
+	printf("= %i", result);
 		
 	return 0;
 }
