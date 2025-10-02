@@ -11,11 +11,9 @@ int main(int argc, char *argv[])
 	scanf("%d",&x);
 	
 	if (x > 0)
-		printf("positive number \n");
-	else if (x < 0)
-		printf("negative number \n");
+		printf("absolute is %i.\n", x);
 	else
-		printf("zero \n");
+		printf("absolute is %i. \n", -x);
 		
 	return 0;
 }
